@@ -17,7 +17,36 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
+.wrapper_loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 40000;
+}
+.wrapper_loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  color: #909090;
+  font-size: 1.5rem;
+  animation: loaderBig 1s linear infinite;
+  transition: 0.8s;
+}
+@keyframes loaderBig {
+  0% {
+    font-size: 1.5rem;
+  }
+  50% {
+    font-size: 3rem;
+  }
+  100% {
+    font-size: 1.5rem;
+  }
+}
 .main {
   width: 100%;
   min-height: 100%;
