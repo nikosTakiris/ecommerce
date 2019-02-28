@@ -1,4 +1,4 @@
-#Shopping cart project
+# Shopping cart project
 
 *Description*
 This project is a simple eCommerce website with javascript.
