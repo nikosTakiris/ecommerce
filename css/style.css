@@ -26,27 +26,15 @@ html, body {
   background: #fff;
   z-index: 40000;
 }
-.wrapper_loader p {
+.wrapper_loader img {
   position: fixed;
   top: 50%;
   left: 50%;
   transform:translate(-50%, -50%);
   color: #909090;
-  font-size: 1.5rem;
-  animation: loaderBig 2s linear infinite;
-  transition: 0.8s;
+  width: 3.5rem;
 }
-@keyframes loaderBig {
-  0% {
-    font-size: 1.5rem;
-  }
-  50% {
-    font-size: 2.5rem;
-  }
-  100% {
-    font-size: 1.5rem;
-  }
-}
+
 .main {
   width: 100%;
   min-height: 100%;
