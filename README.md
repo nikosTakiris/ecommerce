@@ -1,6 +1,6 @@
 # Shopping cart project
 
-###Description
+#Description
 This project is a simple eCommerce website with javascript.
 
 ###Goals
