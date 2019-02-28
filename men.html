@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ecommerce</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Dancing+Script|Roboto+Condensed|Rokkitt|Pathway+Gothic+One|Poppins+Round|Noto+Sans" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+
+<body>
+<div class='main'>
+<div class='landing'>
+
+  <header>
+
+    <div class='header_inside'>
+
+      <div class='logo'>
+        <h1><a href='index.html'>shopy.</a></h1>
+      </div>
+
+      <!-- icon menu in responsive -->
+      <div class='icon_menu'><img src='images/menu.png'></div>
+
+      <div class='menu'>
+        <ul>
+          <li><a href='about.html'>about</a></li>
+          <li><a href='shop.html'>shop</a></li>
+          <li><a href='wishlist.html'>my wishlist</a></li>
+          <li><a href='cart.html'>my cart</a></li>
+        </ul>
+      </div>
+
+      <div class='wish_cart_icon'>
+
+        <div class='div_cart div_icon'>
+          <div class='image_relative'>
+          <a href='cart.html'><img src='images/cart.png'></a>
+          <div class='tag tag_cart'>
+            <p class='the_cart_count'>My cart</p>
+          </div>
+          <div class='counterCart'><p></p></div>
+        </div>
+
+        </div>
+
+        <div class='div_wish div_icon'>
+          <div class='image_relative'>
+          <a href='wishlist.html'><img src='images/wish.png'></a>
+          <div class='tag tag_wish'>
+            <p class='the_wish_count'>My wishlist</p>
+          </div>
+          <div class='counterWish'><p></p></div>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+<!-- title men -->
+<div class='wrapper_back_shop'>
+<div class='back_shop'>
+  <p class='men_store'>men</p>
+<h1>Winter is coming.</h1>
+<p class='collection_p'>New collection 2019</p>
+</div>
+</div>
+
+<div class='title_collection trend_collection'>
+<div class='border_line'></div><p class='title_home'>Store</p>
+</div>
+
+<!-- the shop -->
+<div class='wrapper_shop'>
+<!-- the left side (filters) -->
+<div class='shop_left'>
+
+<div class='wrapper_filter'>
+
+<p class='filter_title'>Filter</p>
+
+<!-- filter sales -->
+<div class='filter_wrapper'>
+<div class='sales_new_content'>
+<div class='filter_items' data-id="sales"><p class='filter_desc'>Products on sales</p> <input type='checkbox' class='sales_new filter_general sales_value filter_value' data-general="sales"></div>
+</div>
+</div>
+
+<!-- filter new -->
+<div class='filter_wrapper'>
+  <div class='sales_new_content'>
+<div class='filter_items' data-id="collection"><p class='filter_desc'>New collection</p><input type='checkbox' class='sales_new filter_general new_value filter_value' data-general="collection"></div>
+</div>
+</div>
+
+<!-- filter price -->
+<div class='filter_wrapper'>
+<div class='filter_items filter_items_title' data-id='price'><p class='content_title filter_desc' data-id='price'>Price</p> <span class='plus_sign' data-id='price'>+</span></div>
+<div class='filter_content' data-id='price'>
+<div class='filter_items'><p class='price_one filter_desc'>0 - $50.00</p><input type='checkbox' class='filter_general filter_price price_one_value filter_value' data-general="0-50" data-price="0-50"></div>
+<div class='filter_items'><p class='price_two filter_desc'> $51.00 - $100.00</p> <input type='checkbox' class='filter_general filter_price price_two_value filter_value' data-general="51-100" data-price="51-100"></div>
+<div class='filter_items'><p class='price_three filter_desc'>$101.00 - $150.00</p> <input type='checkbox' class='filter_general filter_price price_three_value filter_value' data-general="101-150" data-price="101-150"></div>
+<div class='filter_items'><p class='price_four filter_desc'>$151.00 -</p> <input type='checkbox' class='filter_general filter_price price_four_value filter_value' data-general="151-" data-price="151-"></div>
+</div>
+</div>
+
+<!-- filter color -->
+<div class='filter_wrapper'>
+<div class='filter_items filter_items_title' data-id='color'><p class='content_title filter_desc' data-id='color'>Color</p> <span class='plus_sign' data-id='color'>+</span></div>
+<div class='filter_content filter_content_color' data-id='color'>
+<div class='filter_items'><div class='brown_filter filter_desc filter_color_desc'></div><span class='color_span'>Brown</span><input type='checkbox' class='filter_general filter_color brown_value filter_value' data-general="brown" data-color="brown"></div>
+<div class='filter_items'><div class='black_filter filter_desc filter_color_desc'></div><span class='color_span'>Black</span><input type='checkbox' class='filter_general filter_color black_value filter_value' data-general="black" data-color="black"></div>
+<div class='filter_items'><div class='blue_filter filter_desc filter_color_desc'></div><span class='color_span'>Blue</span><input type='checkbox' class='filter_general filter_color blue_value filter_value' data-general="blue" data-color="blue"></div>
+<div class='filter_items'><div class='grey_filter filter_desc filter_color_desc'></div><span class='color_span'>Grey</span><input type='checkbox' class='filter_general filter_color grey_value filter_value' data-general="grey" data-color="grey"></div>
+<div class='filter_items'><div class='yellow_filter filter_desc filter_color_desc'></div><span class='color_span'>Yellow</span><input type='checkbox' class='filter_general filter_color yellow_value filter_value' data-general="yellow" data-color="yellow"></div>
+<div class='filter_items'><div class='red_filter filter_desc filter_color_desc'></div><span class='color_span'>Red</span><input type='checkbox' class='filter_general filter_color red_value filter_value' data-general="red" data-color="red"></div>
+<div class='filter_items'><div class='orange_filter filter_desc filter_color_desc'></div><span class='color_span'>Orange</span><input type='checkbox' class='filter_general filter_color orange_value filter_value' data-general="orange"></div>
+<div class='filter_items'><div class='cream_filter filter_desc filter_color_desc'></div><span class='color_span'>Cream</span><input type='checkbox' class='filter_general filter_color cream_value filter_value' data-general="cream"></div>
+</div>
+</div>
+
+<!-- filter category -->
+<div class='filter_wrapper'>
+<div class='filter_items filter_items_title' data-id='categories'><p class='content_title filter_desc' data-id='categories'>Categories</p> <span class='plus_sign' data-id='categories'>+</span></div>
+<div class='filter_content' data-id='categories'>
+<div class='filter_items'><p class='jacket_category filter_desc'>jacket</p><input type='checkbox' class='filter_general jacket_value filter_value' data-general="jacket"></div>
+<div class='filter_items'><p class='shoes_category filter_desc'>shoes</p><input type='checkbox' class='filter_general shoes_value filter_value' data-general="shoes"></div>
+<div class='filter_items'><p class='hat_category filter_desc'>hat</p><input type='checkbox' class='filter_general hat_value filter_value' data-general="hat"></div>
+<div class='filter_items'><p class='coat_category filter_desc'>shirt</p><input type='checkbox' class='filter_general coat_value filter_value' data-general="shirt"></div>
+<div class='filter_items'><p class='sunglasses_category filter_desc'>sunglasses</p><input type='checkbox' class='filter_general sunglasses_value filter_value' data-general="sunglasses"></div>
+<div class='filter_items'><p class='filter_desc'>accessories</p><input type='checkbox' class='filter_general filter_value' data-general="accessories"></div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+<!-- the right side (products) -->
+<div class='shop_right'>
+
+<div class='wrapper_products'>
+
+<div class='product'>
+
+
+  <div class='trend_product product_shop product_trend women_men_product' data-price="101-150" data-desc="Jacket yellow" data-theprice="130" data-pic="images/a/e2.png" data-color="yellow" data-category="jacket" data-status="collection" data-general='"101-150", "yellow", "jacket"'>
+    <div class='added_to_wish' data-desc="Jacket yellow"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/e2.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag'>
+          <p>new</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Jacket yellow</p>
+      <div class='total_price_product'><p class='trend_desc_two'>130.00 <span class='euroFont'>&euro;</span></p></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-desc="Jacket orange" data-theprice="140" data-pic="images/a/e4.png" data-price="101-150" data-color="orange" data-status="collection" data-category="jacket">
+    <div class='added_to_wish' data-desc="Jacket orange"><p>Added to the wishList</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/e4.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag'>
+          <p>new</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Jacket orange</p>
+      <div class='total_price_product'><p class='trend_desc_two'>140.00 <span class='euroFont'>&euro;</span></p></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-delprice="110" data-desc="Shirt black" data-theprice="55" data-pic="images/a/t1.png" data-price="51-100" data-color="black" data-category="shirt" data-status="sales" data-general='"51-100", "black", "shirt"'>
+    <div class='added_to_wish' data-desc="Shirt black"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/t1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag tag_off'>
+          <p>-50%</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Shirt black</p>
+      <div class='delete_new_price'><p class='trend_desc_two deleted_price'>110.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>55.00 <span class='euroFont'>&euro;</span></span></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-delprice="340" data-desc="Leather jacket black" data-theprice="170" data-pic="images/a/c1.png" data-price="151-" data-color="black" data-category="jacket" data-status="sales" data-general='"151-", "black", "jacket"'>
+    <div class='added_to_wish' data-desc="Leather jacket black"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/c1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag tag_off'>
+          <p>-50%</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Leather jacket black</p>
+      <div class='delete_new_price'><p class='trend_desc_two deleted_price'>340.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>170.00 <span class='euroFont'>&euro;</span></span></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-delprice="170" data-desc="Jacket light brown" data-theprice="85" data-pic="images/a/a1.png" data-price="51-100" data-color="brown" data-category="jacket" data-status="sales" data-general='"51-100", "brown", "jacket"'>
+    <div class='added_to_wish' data-desc="Jacket light brown"><p>Added to the wishList</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/a1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag tag_off'>
+          <p>-50%</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Jacket light brown</p>
+      <div class='delete_new_price'><p class='trend_desc_two deleted_price'>170.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>85.00 <span class='euroFont'>&euro;</span></span></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-desc="Scarf brown" data-theprice="20" data-pic="images/a/r1.png" data-price="0-50" data-color="brown" data-category="accessories" data-status="collection" data-general='"0-50", "brown", "accessories"'>
+    <div class='added_to_wish' data-desc="Scarf brown"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/r1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+          <div class='new_product_tag'>
+          <p>new</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Scarf brown</p>
+      <div class='total_price_product'><p class='trend_desc_two'>20.00 <span class='euroFont'>&euro;</span></p></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-desc="Boots black" data-theprice="210" data-pic="images/a/f1.png" data-price="151-" data-color="black" data-category="shoes" data-status="collection" data-general='"151-", "black", "shoes"'>
+    <div class='added_to_wish' data-desc="Boots black"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/f1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag'>
+          <p>new</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Boots black</p>
+      <div class='total_price_product'><p class='trend_desc_two'>210.00 <span class='euroFont'>&euro;</span></p></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-desc="Hat cream" data-theprice="30" data-pic="images/a/l1.png" data-price="0-50" data-color="cream" data-category="hat" data-status="collection" data-general='"0-50", "yellow", "hat"'>
+    <div class='added_to_wish' data-desc="Hat cream"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/l1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+          <div class='new_product_tag'>
+          <p>new</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Hat cream</p>
+      <div class='total_price_product'><p class='trend_desc_two'>30.00 <span class='euroFont'>&euro;</span></p></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-delprice="210" data-desc="Sunglasses blue" data-theprice="105" data-pic="images/a/m2.png" data-price="101-150" data-color="blue" data-category="sunglasses" data-status="sales" data-general='"101-150", "blue", "sunglasses"'>
+    <div class='added_to_wish' data-desc="Sunglasses blue"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/m2.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+          <div class='new_product_tag tag_off'>
+          <p>-50%</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Sunglasses blue</p>
+      <div class='delete_new_price'><p class='trend_desc_two deleted_price'>210.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>105.00 <span class='euroFont'>&euro;</span></span></div>
+    </div>
+  </div>
+
+    <div class='trend_product product_shop product_trend women_men_product' data-desc="Boots grey" data-theprice="190" data-pic="images/a/f3.png" data-price="151-" data-color="grey" data-category="shoes" data-status="collection" data-general='"151-", "grey", "shoes"'>
+      <div class='added_to_wish' data-desc="Boots grey"><p>Added to the wishlist</p></div>
+      <div class='trend_picture product_picture women_men_picture'>
+        <img src='images/a/f3.png'>
+        <div class='overlay_icon'></div>
+        <div class='product_icons'>
+          <img src='images/wish.png' class='product_wish_icon'>
+          <div class='new_product_tag'>
+            <p>new</p>
+          </div>
+        </div>
+      </div>
+      <div class='trend_desc'>
+        <p class='trend_desc_one'>Boots grey</p>
+        <div class='total_price_product'><p class='trend_desc_two'>190.00 <span class='euroFont'>&euro;</span></p></div>
+      </div>
+    </div>
+
+    <div class='trend_product product_shop product_trend women_men_product' data-delprice="120" data-desc="Jacket blue" data-theprice="60" data-pic="images/a/d1.png" data-price="51-100" data-color="blue" data-category="jacket" data-status="sales" data-general='"51-100", "blue", "jacket"'>
+      <div class='added_to_wish' data-desc="Jacket blue"><p>Added to the wishlist</p></div>
+      <div class='trend_picture product_picture women_men_picture'>
+        <img src='images/a/d1.png'>
+        <div class='overlay_icon'></div>
+        <div class='product_icons'>
+          <img src='images/wish.png' class='product_wish_icon'>
+            <div class='new_product_tag tag_off'>
+            <p>-50%</p>
+          </div>
+        </div>
+      </div>
+      <div class='trend_desc'>
+        <p class='trend_desc_one'>Jacket blue</p>
+        <div class='delete_new_price'><p class='trend_desc_two deleted_price'>120.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>60.00 <span class='euroFont'>&euro;</span></span></div>
+      </div>
+    </div>
+
+    <div class='trend_product product_shop product_trend women_men_product' data-delprice="340" data-desc="Jacket leather red" data-theprice="170" data-pic="images/a/c2.png" data-price="151-" data-color="red" data-category="jacket" data-status="sales" data-general='"151-", "red", "jacket"'>
+      <div class='added_to_wish added' data-desc="Jacket leather red"><p>Added to the wishlist</p></div>
+      <div class='trend_picture product_picture women_men_picture'>
+        <img src='images/a/c2.png'>
+        <div class='overlay_icon'></div>
+        <div class='product_icons'>
+          <img src='images/wish.png' class='product_wish_icon'>
+          <div class='new_product_tag tag_off'>
+            <p>-50%</p>
+          </div>
+        </div>
+      </div>
+      <div class='trend_desc'>
+        <p class='trend_desc_one'>Jacket leather red</p>
+        <div class='delete_new_price'><p class='trend_desc_two deleted_price'>340.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>170.00 <span class='euroFont'>&euro;</span></span></div>
+      </div>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class='full_overlay'></div>
+
+<footer>
+  <div class='footer_inside'>
+    <p>Written and designed by <span class='nikos'><a href='takiris.com'>Nikos Takiris</a></span></p>
+  </div>
+</footer>
+
+
+<!-- rollbar -->
+<div class='wrapper_roll_navigation'>
+  <div class='header_roll_wrapper'>
+    <div class='header_inside_roll'>
+      <div class='logo logo_roll'>
+        <h1><a href='index.html'>shopy.</a></h1>
+      </div>
+      <div class='menu menu_roll'>
+        <ul>
+          <li><a href='about.html'>about</a></li>
+          <li><a href='shop.html'>shop</a></li>
+          <li><a href='wishlist.html'>my wishlist</a></li>
+          <li><a href='cart.html'>my cart</a></li>
+        </ul>
+      </div>
+      <div class='wish_cart_icon wish_cart_icon_roll'>
+        <div class='div_cart div_icon'>
+          <div class='image_relative image_relative_roll'>
+          <a href='cart.html'><img src='images/cart.png'></a>
+          <div class='tag tag_cart tag_roll'>
+            <p class='the_cart_count'>My cart</p>
+          </div>
+          <div class='counterCart'><p></p></div>
+        </div>
+        </div>
+        <div class='div_wish div_icon div_wish_roll div_icon_roll'>
+          <div class='image_relative image_relative_roll'>
+          <a href='wishlist.html'><img src='images/wish.png'></a>
+          <div class='tag tag_wish tag_roll'>
+            <p class='the_wish_count'>My wishlist</p>
+          </div>
+          <div class='counterWish'><p></p></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- icon menu -->
+<div class='icon_menu_display'>
+<p class='close_menu'>x</p>
+<div class='icon_menu_inside'>
+<ul>
+  <li><a href='about.html'>about</a></li>
+  <li><a href='shop.html'>shop</a></li>
+  <li><a href='wishlist.html'>my wishlist</a></li>
+  <li><a href='cart.html'>my cart</a></li>
+</ul>
+</div>
+</div>
+
+<script src="js/shop.js" type="text/javascript"></script>
+<script src='js/men.js' type="text/javascript"></script>
+</body>
+</html>

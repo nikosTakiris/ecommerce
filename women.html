@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ecommerce</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Dancing+Script|Roboto+Condensed|Rokkitt|Pathway+Gothic+One|Poppins+Round|Noto+Sans" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+
+<body>
+<div class='main'>
+<div class='landing'>
+
+  <header>
+
+    <div class='header_inside'>
+
+      <div class='logo'>
+        <h1><a href='index.html'>shopy.</a></h1>
+      </div>
+
+      <!-- icon menu in responsive -->
+      <div class='icon_menu'><img src='images/menu.png'></div>
+
+      <div class='menu'>
+        <ul>
+          <li><a href='about.html'>about</a></li>
+          <li><a href='shop.html'>shop</a></li>
+          <li><a href='wishlist.html'>my wishlist</a></li>
+          <li><a href='cart.html'>my cart</a></li>
+        </ul>
+      </div>
+
+      <div class='wish_cart_icon'>
+
+        <!-- cart icon -->
+        <div class='div_cart div_icon'>
+          <div class='image_relative'>
+          <a href='cart.html'><img src='images/cart.png'></a>
+          <div class='tag tag_cart'>
+            <p class='the_cart_count'>My cart</p>
+          </div>
+          <div class='counterCart'><p></p></div>
+        </div>
+        </div>
+
+        <!-- wishlist icon -->
+        <div class='div_wish div_icon'>
+          <div class='image_relative'>
+          <a href='wishlist.html'><img src='images/wish.png'></a>
+          <div class='tag tag_wish'>
+            <p class='the_wish_count'>My wishlist</p>
+          </div>
+          <div class='counterWish'><p></p></div>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+<!-- the shop -->
+<div class='wrapper_back_shop'>
+  <!-- the title -->
+<div class='back_shop'>
+<p class='men_store'>women</p>
+<h1>Winter is coming.</h1>
+<p>New collection 2019</p>
+</div>
+</div>
+
+<div class='title_collection trend_collection'>
+<div class='border_line'></div><p class='title_home'>Store</p>
+</div>
+
+<div class='wrapper_shop'>
+
+<!-- the left side (filters) -->
+<div class='shop_left'>
+
+<div class='wrapper_filter'>
+
+<p class='filter_title'>Filter</p>
+
+<!-- filter sales -->
+<div class='filter_wrapper'>
+  <div class='sales_new_content'>
+<div class='filter_items' data-id="sales"><p class='filter_desc'>Products on sales</p> <input type='checkbox' class='filter_general sales_value filter_value' data-general="sales"></div>
+</div>
+</div>
+
+<!-- filter new -->
+<div class='filter_wrapper'>
+  <div class='sales_new_content'>
+<div class='filter_items' data-id="collection"><p class='filter_desc'>New collection</p><input type='checkbox' class='filter_general new_value filter_value' data-general="collection"></div>
+</div>
+</div>
+
+<!-- filter price -->
+<div class='filter_wrapper'>
+<div class='filter_items filter_items_title' data-id='price'><p class='content_title filter_desc' data-id='price'>Price</p> <span class='plus_sign' data-id='price'>+</span></div>
+<div class='filter_content' data-id='price'>
+<div class='filter_items'><p class='price_one filter_desc'>0 - $50.00</p><input type='checkbox' class='filter_general filter_price price_one_value filter_value' data-general="0-50" data-price="0-50"></div>
+<div class='filter_items'><p class='price_two filter_desc'> $51.00 - $100.00</p> <input type='checkbox' class='filter_general filter_price price_two_value filter_value' data-general="51-100" data-price="51-100"></div>
+<div class='filter_items'><p class='price_three filter_desc'>$101.00 - $150.00</p> <input type='checkbox' class='filter_general filter_price price_three_value filter_value' data-general="101-150" data-price="101-150"></div>
+<div class='filter_items'><p class='price_four filter_desc'>$151.00 -</p> <input type='checkbox' class='filter_general filter_price price_four_value filter_value' data-general="151-" data-price="151-"></div>
+</div>
+</div>
+
+<!-- filter color -->
+<div class='filter_wrapper'>
+<div class='filter_items filter_items_title' data-id='color'><p class='content_title filter_desc' data-id='color'>Color</p> <span class='plus_sign' data-id='color'>+</span></div>
+<div class='filter_content filter_content_color' data-id='color'>
+<div class='filter_items'><div class='brown_filter filter_desc filter_color_desc'></div><span class='color_span'>Brown</span><input type='checkbox' class='filter_general filter_color brown_value filter_value' data-general="brown"></div>
+<div class='filter_items'><div class='black_filter filter_desc filter_color_desc'></div><span class='color_span'>Black</span><input type='checkbox' class='filter_general filter_color black_value filter_value' data-general="black"></div>
+<div class='filter_items'><div class='white_filter filter_desc filter_color_desc'></div><span class='color_span'>White</span><input type='checkbox' class='filter_general filter_color white_value filter_value' data-general="white"></div>
+<div class='filter_items'><div class='pink_filter filter_desc filter_color_desc'></div><span class='color_span'>Pink</span><input type='checkbox' class='filter_general filter_color pink_value filter_value' data-general="pink"></div>
+<div class='filter_items'><div class='yellow_filter filter_desc filter_color_desc'></div><span class='color_span'>Yellow</span><input type='checkbox' class='filter_general filter_color yellow_value filter_value' data-general="yellow"></div>
+<div class='filter_items'><div class='red_filter filter_desc filter_color_desc'></div><span class='color_span'>Red</span><input type='checkbox' class='filter_general filter_color red_value filter_value' data-general="red"></div>
+<div class='filter_items'><div class='purple_filter filter_desc filter_color_desc'></div><span class='color_span'>Purple</span><input type='checkbox' class='filter_general filter_color red_value filter_value' data-general="purple"></div>
+<div class='filter_items'><div class='grey_filter filter_desc filter_color_desc'></div><span class='color_span'>Grey</span><input type='checkbox' class='filter_general filter_color grey_value filter_value' data-general="grey"></div>
+<div class='filter_items'><div class='green_filter filter_desc filter_color_desc'></div><span class='color_span'>Green</span><input type='checkbox' class='filter_general filter_color green_value filter_value' data-general="green"></div>
+<div class='filter_items'><div class='cream_filter filter_desc filter_color_desc'></div><span class='color_span'>Cream</span><input type='checkbox' class='filter_general filter_color cream_value filter_value' data-general="cream"></div>
+</div>
+</div>
+
+<!-- filter category -->
+<div class='filter_wrapper'>
+<div class='filter_items filter_items_title' data-id='categories'><p class='content_title filter_desc' data-id='categories'>Categories</p> <span class='plus_sign' data-id='categories'>+</span></div>
+<div class='filter_content' data-id='categories'>
+<div class='filter_items'><p class='filter_desc'>shoes</p><input type='checkbox' class='filter_general filter_value' data-general="shoes"></div>
+<div class='filter_items'><p class='filter_desc'>accessories</p><input type='checkbox' class='filter_general filter_value' data-general="accessories"></div>
+<div class='filter_items'><p class='filter_desc'>shirt</p><input type='checkbox' class='filter_general filter_value' data-general="shirt"></div>
+<div class='filter_items'><p class='filter_desc'>fur</p><input type='checkbox' class='filter_general filter_value' data-general="fur"></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- the right side (products) -->
+<div class='shop_right'>
+
+<div class='wrapper_products'>
+
+<div class='product'>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-desc="Fur brown" data-theprice="170" data-pic="images/a/o1.png" data-price="151-" data-color="brown" data-status="collection" data-category="fur">
+    <div class='added_to_wish' data-desc="Fur brown"><p>Added to the wishList</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/o1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag'>
+          <p>new</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Fur brown</p>
+      <div class='total_price_product'><p class='trend_desc_two'>170.00 <span class='euroFont'>&euro;</span></p></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-delprice="100" data-desc="Boots cream" data-theprice="50" data-pic="images/a/g3.png" data-price="0-50" data-color="cream" data-category="shoes" data-status="sales">
+    <div class='added_to_wish' data-desc="Boots cream"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/g3.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+          <div class='new_product_tag tag_off'>
+          <p>-50%</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Boots cream</p>
+      <div class='delete_new_price'><p class='trend_desc_two deleted_price'>100.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>50.00 <span class='euroFont'>&euro;</span></span></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-delprice="80" data-desc="Heels light pink" data-theprice="40" data-pic="images/a/h2.png" data-price="0-50" data-color="pink" data-category="shoes" data-status="sales">
+    <div class='added_to_wish' data-desc="Heels light pink"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/h2.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag tag_off'>
+          <p>-50%</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Heels light pink</p>
+      <div class='delete_new_price'><p class='trend_desc_two deleted_price'>80.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>40.00 <span class='euroFont'>&euro;</span></span></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-delprice="90" data-desc="Heels black" data-theprice="45" data-pic="images/a/k1.png" data-price="0-50" data-color="black" data-category="shoes" data-status="sales">
+    <div class='added_to_wish' data-desc="Heels black"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/k1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag tag_off'>
+          <p>-50%</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Heels black</p>
+      <div class='delete_new_price'><p class='trend_desc_two deleted_price'>90.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>45.00 <span class='euroFont'>&euro;</span></span></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-delprice="110" data-desc="Heels yellow" data-theprice="55" data-pic="images/a/i1.png" data-price="51-100" data-color="yellow" data-category="shoes" data-status="sales">
+    <div class='added_to_wish' data-desc="Heels yellow"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/i1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag tag_off'>
+          <p>-50%</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Heels yellow</p>
+      <div class='delete_new_price'><p class='trend_desc_two deleted_price'>110.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>55.00 <span class='euroFont'>&euro;</span></span></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-desc="Fur dark green" data-theprice="120" data-pic="images/a/p1.png" data-price="101-150" data-color="green" data-status="collection" data-category="fur">
+    <div class='added_to_wish' data-desc="Fur dark green"><p>Added to the wishList</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/p1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag'>
+          <p>new</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Fur dark green</p>
+      <div class='total_price_product'><p class='trend_desc_two'>120.00 <span class='euroFont'>&euro;</span></p></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-desc="Scarf red" data-theprice="30" data-pic="images/a/q1.png" data-price="0-50" data-color="red" data-status="collection" data-category="accessories">
+    <div class='added_to_wish' data-desc="Scarf red"><p>Added to the wishList</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/q1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag'>
+          <p>new</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Scarf red</p>
+      <div class='total_price_product'><p class='trend_desc_two'>30.00 <span class='euroFont'>&euro;</span></p></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-delprice="50" data-desc="Polo white" data-theprice="25" data-pic="images/a/s1.png" data-price="0-50" data-color="white" data-category="shirt" data-status="sales">
+    <div class='added_to_wish' data-desc="Polo white"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/s1.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag tag_off'>
+          <p>-50%</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Polo white</p>
+      <div class='delete_new_price'><p class='trend_desc_two deleted_price'>50.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>25.00 <span class='euroFont'>&euro;</span></span></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-delprice="60" data-desc="Heels red" data-theprice="30" data-pic="images/a/j3.png" data-price="0-50" data-color="red" data-category="shoes" data-status="sales">
+    <div class='added_to_wish' data-desc="Heels red"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/j3.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag tag_off'>
+          <p>-50%</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Heels red</p>
+      <div class='delete_new_price'><p class='trend_desc_two deleted_price'>60.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>30.00 <span class='euroFont'>&euro;</span></span></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-desc="Scarf light grey" data-theprice="20" data-pic="images/a/r2.png" data-price="0-50" data-color="grey" data-status="collection" data-category="accessories">
+    <div class='added_to_wish' data-desc="Scarf light grey"><p>Added to the wishList</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/r2.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag'>
+          <p>new</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Scarf light grey</p>
+      <div class='total_price_product'><p class='trend_desc_two'>20.00 <span class='euroFont'>&euro;</span></p></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-desc="Fur dark purple" data-theprice="120" data-pic="images/a/p2.png" data-price="101-150" data-color="purple" data-status="collection" data-category="fur">
+    <div class='added_to_wish' data-desc="Fur dark purple"><p>Added to the wishList</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/p2.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag'>
+          <p>new</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Fur dark purple</p>
+      <div class='total_price_product'><p class='trend_desc_two'>120.00 <span class='euroFont'>&euro;</span></p></div>
+    </div>
+  </div>
+
+  <div class='trend_product product_shop product_trend women_men_product' data-delprice="90" data-desc="Heels white" data-theprice="45" data-pic="images/a/k2.png" data-price="0-50" data-color="white" data-category="shoes" data-status="sales">
+    <div class='added_to_wish' data-desc="Heels white"><p>Added to the wishlist</p></div>
+    <div class='trend_picture product_picture women_men_picture'>
+      <img src='images/a/k2.png'>
+      <div class='overlay_icon'></div>
+      <div class='product_icons'>
+        <img src='images/wish.png' class='product_wish_icon'>
+        <div class='new_product_tag tag_off'>
+          <p>-50%</p>
+        </div>
+      </div>
+    </div>
+    <div class='trend_desc'>
+      <p class='trend_desc_one'>Heels white</p>
+      <div class='delete_new_price'><p class='trend_desc_two deleted_price'>90.00 <span class='euroFont'>&euro;</span></p><span class='new_price trend_desc_two'>45.00 <span class='euroFont'>&euro;</span></span></div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class='full_overlay'></div>
+
+<footer>
+  <div class='footer_inside'>
+    <p>Written and designed by <span class='nikos'><a href='takiris.com'>Nikos Takiris</a></span></p>
+  </div>
+</footer>
+
+<!-- rollbar -->
+<div class='wrapper_roll_navigation'>
+  <div class='header_roll_wrapper'>
+    <div class='header_inside_roll'>
+      <div class='logo logo_roll'>
+        <h1><a href='index.html'>shopy.</a></h1>
+      </div>
+      <div class='menu menu_roll'>
+        <ul>
+          <li><a href='about.html'>about</a></li>
+          <li><a href='shop.html'>shop</a></li>
+          <li><a href='wishlist.html'>my wishlist</a></li>
+          <li><a href='cart.html'>my cart</a></li>
+        </ul>
+      </div>
+      <div class='wish_cart_icon wish_cart_icon_roll'>
+        <div class='div_cart div_icon'>
+          <div class='image_relative image_relative_roll'>
+          <a href='cart.html'><img src='images/cart.png'></a>
+          <div class='tag tag_cart tag_roll'>
+            <p class='the_cart_count'>My cart</p>
+          </div>
+          <div class='counterCart'><p></p></div>
+        </div>
+        </div>
+        <div class='div_wish div_icon div_wish_roll div_icon_roll'>
+          <div class='image_relative image_relative_roll'>
+          <a href='wishlist.html'><img src='images/wish.png'></a>
+          <div class='tag tag_wish tag_roll'>
+            <p class='the_wish_count'>My wishlist</p>
+          </div>
+          <div class='counterWish'><p></p></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- icon menu -->
+<div class='icon_menu_display'>
+<p class='close_menu'>x</p>
+<div class='icon_menu_inside'>
+<ul>
+  <li><a href='about.html'>about</a></li>
+  <li><a href='shop.html'>shop</a></li>
+  <li><a href='wishlist.html'>my wishlist</a></li>
+  <li><a href='cart.html'>my cart</a></li>
+</ul>
+</div>
+</div>
+
+<script src="js/shop.js" type="text/javascript"></script>
+<script src='js/men.js' type="text/javascript"></script>
+</body>
+</html>
