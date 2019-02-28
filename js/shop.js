@@ -1,3 +1,8 @@
+window.addEventListener('load', function() {
+let wrapper_loader = document.querySelector(".wrapper_loader");
+wrapper_loader.style.display = "none";
+});
+
 window.addEventListener('scroll', function(e) {
   // rollbar
   let wTop = window.pageYOffset;

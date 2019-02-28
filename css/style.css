@@ -26,14 +26,14 @@ html, body {
   background: #fff;
   z-index: 40000;
 }
-.wrapper_loader {
+.wrapper_loader p {
   position: fixed;
   top: 50%;
   left: 50%;
   transform:translate(-50%, -50%);
   color: #909090;
   font-size: 1.5rem;
-  animation: loaderBig 1s linear infinite;
+  animation: loaderBig 2s linear infinite;
   transition: 0.8s;
 }
 @keyframes loaderBig {
@@ -41,7 +41,7 @@ html, body {
     font-size: 1.5rem;
   }
   50% {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   100% {
     font-size: 1.5rem;

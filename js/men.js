@@ -1,10 +1,13 @@
+window.addEventListener('load', function() {
+let wrapper_loader = document.querySelector(".wrapper_loader");
+wrapper_loader.style.display = "none";
+});
 
 let the_product = {}; // the product objects
 let array_product = []; // the array of product objects
 
 let filter_array = []; // the array of checkbox checked objects
 let the_filter = {}; // the checked checkeboxes object
-
 
 // show/hide filter content
 let filter_items_title = document.querySelectorAll(".filter_items_title");
