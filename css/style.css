@@ -388,8 +388,6 @@ margin: 0;
 }
 /* slider */
 .wrapper_slider {
-  background: #eeefea;
-  background: #fff;
   background: #f7f7f7;
   margin: 0;
   width: 100%;
@@ -432,7 +430,6 @@ margin: 0;
   transition: 1s ease-in-out;
 }
 .text_slide h1 {
-  color: #404040;
   color:#606060;
   font-size: 4rem;
   font-weight: 600;
@@ -446,7 +443,6 @@ margin: 0;
 }
 .text_slide p {
   font-size: 2rem;
-  color: #909090;
   color: #606060;
   font-family: 'Poppins', sans-serif;
 }
