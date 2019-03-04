@@ -589,14 +589,20 @@ let wish_warning = document.querySelector(".wish_warning");
           let the_cart_count = document.querySelectorAll(".the_cart_count");
           let counterCart = document.querySelectorAll(".counterCart");
           let counterCart_p = document.querySelectorAll(".counterCart p");
-          counterCart.forEach(function(counter) {
-            counter.style.display = "block";
-            setTimeout(function() {
-              counter.style.background = "green";
-            }, 2000);
-          });
 
-          counterCart_p.forEach(function(counter_p) {
+          counterCart.forEach(function(counter) {
+          counter.style.display = "block";
+          counter.style.background = "green";
+          counter.style.borderColor = "green";
+          counter.style.transform = "scale(1.2)";
+          setTimeout(function() {
+            counter.style.transform = "scale(1)";
+            counter.style.borderColor = "#909090";
+            counter.style.background = "#909090";
+          }, 1000);
+        });
+
+            counterCart_p.forEach(function(counter_p) {
             counter_p.innerHTML = number;
             setTimeout(function() {
               counter_p.style.color = "#fff";
@@ -1060,12 +1066,18 @@ function displayProduct() {
           numberWish++;
           let counterWish = document.querySelectorAll(".counterWish");
           let counterWish_p = document.querySelectorAll(".counterWish p");
+
           counterWish.forEach(function(counter) {
-            counter.style.display = "block";
-            setTimeout(function() {
-              counter.style.background = "green";
-            }, 2000);
-          });
+          counter.style.display = "block";
+          counter.style.background = "green";
+          counter.style.borderColor = "green";
+          counter.style.transform = "scale(1.2)";
+          setTimeout(function() {
+            counter.style.transform = "scale(1)";
+            counter.style.borderColor = "#909090";
+            counter.style.background = "#909090";
+          }, 1000);
+        });
 
           // add number to wishlist icon
           counterWish_p.forEach(function(counter_p) {
