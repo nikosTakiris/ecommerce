@@ -591,16 +591,16 @@ let wish_warning = document.querySelector(".wish_warning");
           let counterCart_p = document.querySelectorAll(".counterCart p");
 
           counterCart.forEach(function(counter) {
-          counter.style.display = "block";
-          counter.style.background = "green";
-          counter.style.borderColor = "green";
-          counter.style.transform = "scale(1.2)";
-          setTimeout(function() {
-            counter.style.transform = "scale(1)";
-            counter.style.borderColor = "#909090";
-            counter.style.background = "#909090";
-          }, 1000);
-        });
+            counter.style.display = "block";
+            counter.style.background = "green";
+            counter.style.borderColor = "green";
+            counter.style.transform = "scale(1.2)";
+            setTimeout(function() {
+              counter.style.transform = "scale(1)";
+              counter.style.borderColor = "#909090";
+              counter.style.background = "#909090";
+            }, 1000);
+          });
 
             counterCart_p.forEach(function(counter_p) {
             counter_p.innerHTML = number;
