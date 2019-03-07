@@ -2099,13 +2099,7 @@ header {
   position: relative;
 
 }
-.about_just_one_overlay:hover {
-  -webkit-animation: about_one_change linear 0.15s infinite;
-  -moz-animation: about_one_change linear 0.15s infinite;
-  -ms-animation: about_one_change linear 0.15s infinite;
-  -o-animation: about_one_change linear 0.15s infinite;
-  animation: about_one_change linear 0.15s infinite;
-}
+
 .about_one_overlay {
   position: absolute;
   top: 0;
@@ -2116,17 +2110,7 @@ header {
   opacity: 0.5;
   z-index: 50;
 }
-@keyframes about_one_change {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.5;
-  }
-}
+
 .about_two {
   position: relative;
   background-image: url('../images/back1.png');
