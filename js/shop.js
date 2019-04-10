@@ -483,7 +483,7 @@ let wish_warning = document.querySelector(".wish_warning");
 
   //check if the cart is empty
   if(wishCart.length < 1) {
-    wish_warning.innerHTML = "There are no items in your wishlist.";
+    //wish_warning.innerHTML = "There are no items in your wishlist.";
     wish_cart_title.innerHTML = "Your wishlist ("+ wishCart.length+")";
     wish_side_title.forEach(function(the_side) {
       the_side.style.display = "none";
