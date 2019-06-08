@@ -1,4 +1,4 @@
-export function Header() {
+function Header() {
   return (
     `<!DOCTYPE html>
     <html>
@@ -64,3 +64,5 @@ export function Header() {
       </header>`
   );
 }
+
+export {Header}
