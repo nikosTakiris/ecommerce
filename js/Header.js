@@ -1,4 +1,4 @@
-class Header() {
+class Header {
   constructor() {
     return (
       `<!DOCTYPE html>
