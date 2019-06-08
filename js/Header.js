@@ -1,4 +1,4 @@
-function Header() {
+class Header() {
   return (
     `<!DOCTYPE html>
     <html>
