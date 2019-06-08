@@ -1,6 +1,8 @@
 window.addEventListener('load', function() {
 let wrapper_loader = document.querySelector(".wrapper_loader");
+if(wrapper_loader) {
 wrapper_loader.style.display = "none";
+}
 });
 
 window.addEventListener('scroll', function(e) {
