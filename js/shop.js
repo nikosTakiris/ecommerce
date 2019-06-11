@@ -90,8 +90,6 @@ function addItem(name, price, picture, quantity, number, size) {
         for(let i = 0; i < cartList.length; i++) {
         if(cartList[i].name === name)  {
           cartList[i].quantity = cartList[i].quantity + 1;
-          //saveCart();
-          //saveNumber();
           justSave();
           return;
         }
@@ -101,8 +99,6 @@ function addItem(name, price, picture, quantity, number, size) {
       if(cartList[i].name === name) {
         if(cartList[i].size == size) {
         cartList[i].quantity = cartList[i].quantity + 1;
-      //  saveCart();
-    //    saveNumber();
         justSave();
         return;
           }
@@ -112,8 +108,6 @@ function addItem(name, price, picture, quantity, number, size) {
   }
   let item = new Item(name, price, picture, quantity, size);
   cartList.push(item);
-  //saveCart();
-  //saveNumber();
   justSave();
 }
 
@@ -134,9 +128,6 @@ function increaseItem(name, size) {
       the_cart_count.forEach(function(count) {
         count.innerHTML = "My cart \(" +number+ "\)";
       });
-      //saveCart();
-      //saveNumber();
-      //displayCart();
       saveDisplay();
       }
     }
@@ -146,9 +137,6 @@ function increaseItem(name, size) {
    the_cart_count.forEach(function(count) {
      count.innerHTML = "My cart \(" +number+ "\)";
    });
-   //saveCart();
-   //saveNumber();
-   //displayCart();
    saveDisplay();
       }
     }
@@ -173,14 +161,9 @@ function decreaseItem(name, size) {
         count.innerHTML = "My cart \(" +number+ "\)";
       });
       if(cart.quantity < 1) {
-        //saveCart();
-        //saveNumber();
         justSave();
         removeProduct(name, size);
       }
-      //saveCart();
-      //saveNumber();
-      //displayCart();
       saveDisplay();
       }
     }
@@ -194,9 +177,6 @@ function decreaseItem(name, size) {
         saveCart();
         removeProduct(name);
       }
-      //saveCart();
-      //saveNumber();
-      //displayCart();
       saveDisplay();
       }
     }
@@ -217,16 +197,13 @@ let the_cart_count = document.querySelectorAll(".the_cart_count"),
         if(cartList[i].size === size) {
       number = number - cartList[i].quantity;
       cartList.splice(i, 1);
-
       counterCart_p.forEach(function(counter_p) {
         counter_p.innerHTML = number;
       });
-
       the_cart_count.forEach(function(count) {
         count.innerHTML = "My cart \(" +number+ "\)";
       });
       if(cartList.length < 1) {
-
         let the_cart_content = document.querySelector(".the_cart_content");
         the_cart_content.innerHTML = "";
         cartList.splice(i, 1);
@@ -236,18 +213,11 @@ let the_cart_count = document.querySelectorAll(".the_cart_count"),
         the_cart_count.forEach(function(count) {
           count.innerHTML = "My cart \(" +number+ "\)";
         });
-      //  saveCart();
-        //saveNumber();
-    //    displayCart();
         saveDisplay();
         }
-
-      //  saveCart();
-      //  saveNumber();
-      //  displayCart();
         saveDisplay();
       }
-      } // end f no sizes
+      }
       else {
         number = number - cartList[i].quantity;
         cartList.splice(i, 1);
@@ -256,28 +226,18 @@ let the_cart_count = document.querySelectorAll(".the_cart_count"),
           counter_p.innerHTML = number;
         });
         if(cartList.length < 1) {
-
           let the_cart_content = document.querySelector(".the_cart_content");
           the_cart_content.innerHTML = "";
           cartList.splice(i, 1);
           counterCart_p.forEach(function(counter_p) {
             counter_p.innerHTML = number;
           });
-        //  saveCart();
-          //saveNumber();
-          //displayCart();
           saveDisplay();
           }
-
-        //  saveCart();
-          //saveNumber();
-          //displayCart();
           saveDisplay();
           }
         }
       }
-        //saveCart();
-        //saveNumber();
         justSave();
 }
 
@@ -354,47 +314,21 @@ let totalCostItem = 0,
   // clicking increase icon and increase quantity +1 of the current item
   let increase_icon = document.querySelectorAll(".increase_icon");
   if(increase_icon) {
-    // NEW VERSION ....... ->
     buttonFunction(increase_icon, increaseItem);
-    /*increase_icon.forEach(function(the_icon) {
-      the_icon.addEventListener('click', function() {
-        let data_name = the_icon.dataset.name,
-            data_size = the_icon.dataset.size;
-        increaseItem(data_name, data_size);
-      });
-    });*/
   }
 
   // clicking decrease icon and decrease quantity -1 of the current item
   let decrease_icon = document.querySelectorAll(".decrease_icon");
   if(decrease_icon) {
-    // this is the new version .... ->
     buttonFunction(decrease_icon, decreaseItem);
-  /*  decrease_icon.forEach(function(the_icon) {
-      the_icon.addEventListener('click', function() {
-      let data_name = the_icon.dataset.name,
-          data_size = the_icon.dataset.size;
-      decreaseItem(data_name, data_size);
-      });
-    });*/
   }
 
   // clicking remove button and remove the product
   let removeButton = document.querySelectorAll(".removeButton");
   if(removeButton) {
-    // NEW VERSION ..... -->
     buttonFunction(removeButton, removeProduct);
-    /*removeButton.forEach(function(the_button) {
-      the_button.addEventListener('click', function() {
-        let data_name = the_button.dataset.name,
-            data_size = the_button.dataset.size;
-        removeProduct(data_name, data_size);
-        });
-      });*/
     }
 
-
-// NEW VERSION .......... -->
 function buttonFunction(theButton, theButtonFunction) {
   theButton.forEach(function(currentButton) {
     currentButton.addEventListener('click', function() {

@@ -27,15 +27,13 @@ if(filter_items_title) {
       } else if(!title.classList.contains('show')) {
         content_title.style.border = "none";
         content_title.style.fontWeight = "0";
-        //filter_content.style.display = "none";
         displayElement(filter_content, 'none');
         plus_sign.innerHTML = "+";
         filter_array = [];
         content_title.classList.remove('boldText');
         let filter_wrapper = document.querySelectorAll(".filter_wrapper");
           filter_wrapper.forEach(function(wrapper) {
-            //wrapper.style.display = "block";
-            displayElement(wrapper, 'block');
+          displayElement(wrapper, 'block');
             });
           let filter_general = document.querySelectorAll(".filter_general");
           filter_general.forEach(function(general) {
@@ -43,11 +41,9 @@ if(filter_items_title) {
           });
           let product_shop = document.querySelectorAll(".product_shop");
           product_shop.forEach(function(product) {
-            //product.style.display = "block";
             displayElement(product, 'block');
           });
-
-      }
+        }
     });
   });
 }
@@ -57,7 +53,6 @@ if(product_shop) {
 let array_product_data = [];
 product_shop.forEach(function(product) {
   let product_data = product.dataset.general;
-
 
 array_product.push(
   the_product = {
@@ -70,6 +65,7 @@ array_product.push(
 );
 });
 }
+
 // checkboxes filter
 let filter_general = document.querySelectorAll(".filter_general");
 if(filter_general) {
@@ -101,7 +97,6 @@ filter_general.forEach(function(general) {
 function displayFilter(filter_array) {
   resetProducts();
   checkFilter(filter_array);
-
   filter_array.forEach(function(data_filter) {
       array_product.forEach(function(product) {
 

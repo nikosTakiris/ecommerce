@@ -117,6 +117,7 @@ dot_three.addEventListener('click', (e) => {
   callSlider(e, 50, 2);
 });
 
+
 function callSlider(e, sZindex, theCurrent) {
   e.preventDefault();
   clearInterval(timer);
@@ -156,7 +157,6 @@ window.addEventListener('scroll', function() {
   if(window.pageYOffset > 600) {
     wrapper_trend.style.marginTop = "50px";
   }
-
 });
 
 // scroll
@@ -167,16 +167,12 @@ function scrollEvent() {
 
   if (window.localStorage.getItem('newsletter') !== 'notShow') {
   if(wTop > offsetHeightPoster) {
-    //wrapper_newsletter.style.display = "block";
     displayElement(wrapper_newsletter, 'block');
     wrapper_newsletter.style.top = "50%";
     wrapper_newsletter.style.transform = "translate(-50%, -50%)";
-    //full_overlay.style.display = "block";
     displayElement(full_overlay, 'block');
     close_news.addEventListener('click', function(e) {
       e.preventDefault();
-      /*wrapper_newsletter.style.display = "none";
-      full_overlay.style.display = "none";*/
       displayElement(wrapper_newsletter, 'none');
       displayElement(full_overlay, 'none');
       window.localStorage.setItem('newsletter', 'notShow');
@@ -197,8 +193,6 @@ function scrollEvent() {
 
 
     document.body.addEventListener('click', function(e) {
-      /*wrapper_newsletter.style.display = "none";
-      full_overlay.style.display = "none";*/
       displayElement(wrapper_newsletter, 'none');
       displayElement(full_overlay, 'none');
       window.localStorage.setItem('newsletter', 'notShow');
@@ -221,7 +215,4 @@ function displayAbs() {
   absolute_two.style.opacity = "1";
   absolute_one.style.marginTop = "30px";
 }
-
-
-
 });
