@@ -1,18 +1,15 @@
-// shop.html
-//100% height
-let wrapper_height = document.body.clientHeight - 100;
-let wrapper_slider = document.querySelector(".wrapper_slider");
+let wrapper_height = document.body.clientHeight - 100,
+    wrapper_slider = document.querySelector(".wrapper_slider"),
+    wrapper_shop_selection = document.querySelector(".wrapper_shop_selection"),
+    men_side = document.querySelector(".men_side"),
+    women_side = document.querySelector(".women_side"),
+    women_side_text = document.querySelector(".women_side_text h1"),
+    men_side_text = document.querySelector(".men_side_text h1"),
+    women_side_text_a = document.querySelector(".women_side_text a"),
+    men_side_text_a = document.querySelector(".men_side_text a");
+
 wrapper_slider.style.height = wrapper_height + "px";
 
-let wrapper_shop_selection = document.querySelector(".wrapper_shop_selection");
-let men_side = document.querySelector(".men_side");
-let women_side = document.querySelector(".women_side");
-let women_side_text = document.querySelector(".women_side_text h1");
-let men_side_text = document.querySelector(".men_side_text h1");
-let women_side_text_a = document.querySelector(".women_side_text a");
-let men_side_text_a = document.querySelector(".men_side_text a");
-
-// if > 633px
 if(document.body.clientWidth > 633) {
 
 men_side.addEventListener('mouseover', function() {
@@ -26,9 +23,7 @@ women_side.addEventListener('mouseover', function() {
 wrapper_shop_selection.addEventListener('mouseleave', function() {
   sameSize(men_side, women_side, men_side_text, women_side_text, men_side_text_a, women_side_text_a);
 });
-
 }
-
 // on hover side to big
 function bigPoster(bigger, smaller, min_text, reset_text, min_padding, reset_padding) {
   bigger.style.width = "70%";

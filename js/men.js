@@ -3,21 +3,21 @@ let wrapper_loader = document.querySelector(".wrapper_loader");
 wrapper_loader.style.display = "none";
 });
 
-let the_product = {}; // the product objects
-let array_product = []; // the array of product objects
-
-let filter_array = []; // the array of checkbox checked objects
-let the_filter = {}; // the checked checkeboxes object
+let the_product = {}, // the product objects
+    array_product = [], // the array of product objects
+    filter_array = [], // the array of checkbox checked objects
+    the_filter = {}; // the checked checkeboxes object
 
 // show/hide filter content
 let filter_items_title = document.querySelectorAll(".filter_items_title");
 if(filter_items_title) {
   filter_items_title.forEach(function(title) {
     title.addEventListener('click', function(e) {
-      let data_id = title.dataset.id;
-      let filter_content = document.querySelectorAll(".filter_content[data-id='"+data_id+"']")[0];
-      let plus_sign = document.querySelectorAll(".plus_sign[data-id='"+data_id+"']")[0];
-      let content_title = document.querySelectorAll(".content_title[data-id='"+data_id+"']")[0];
+      let data_id = title.dataset.id,
+          filter_content = document.querySelectorAll(".filter_content[data-id='"+data_id+"']")[0],
+          plus_sign = document.querySelectorAll(".plus_sign[data-id='"+data_id+"']")[0],
+          content_title = document.querySelectorAll(".content_title[data-id='"+data_id+"']")[0];
+
       title.classList.toggle('show');
       if(title.classList.contains('show')) {
         content_title.classList.add('boldText');
@@ -27,13 +27,15 @@ if(filter_items_title) {
       } else if(!title.classList.contains('show')) {
         content_title.style.border = "none";
         content_title.style.fontWeight = "0";
-        filter_content.style.display = "none";
+        //filter_content.style.display = "none";
+        displayElement(filter_content, 'none');
         plus_sign.innerHTML = "+";
         filter_array = [];
         content_title.classList.remove('boldText');
         let filter_wrapper = document.querySelectorAll(".filter_wrapper");
           filter_wrapper.forEach(function(wrapper) {
-            wrapper.style.display = "block";
+            //wrapper.style.display = "block";
+            displayElement(wrapper, 'block');
             });
           let filter_general = document.querySelectorAll(".filter_general");
           filter_general.forEach(function(general) {
@@ -41,7 +43,8 @@ if(filter_items_title) {
           });
           let product_shop = document.querySelectorAll(".product_shop");
           product_shop.forEach(function(product) {
-            product.style.display = "block";
+            //product.style.display = "block";
+            displayElement(product, 'block');
           });
 
       }
