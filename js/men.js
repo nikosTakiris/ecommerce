@@ -142,4 +142,4 @@ function displayFilter(filter_array) {
 // display elemfunction displayElement(theElement, display) {
   theElement.style.display = display;
 }
-
+});
