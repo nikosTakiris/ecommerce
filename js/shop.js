@@ -339,32 +339,6 @@ function buttonFunction(theButton, theButtonFunction) {
   });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // clicking the clear cart button
   let clear_cart_btn = document.querySelector(".clear_cart_side p");
   if(clear_cart_btn) {
@@ -464,7 +438,6 @@ function addToWish(the_product, name, price, picture,  status, del_price, catego
   wishCart.push(wishItem);
   saveWish();
   saveWishNumber();
-
 }
 
 // display the wishList
