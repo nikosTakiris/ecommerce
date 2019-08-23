@@ -28,8 +28,7 @@ if(filter_items_title) {
         content_title.style.border = "none";
         content_title.style.fontWeight = "0";
         displayElement(filter_content, 'none');
-        //    filter_content.style.display = "none";
-        plus_sign.innerHTML = "+";
+         plus_sign.innerHTML = "+";
         filter_array = [];
         content_title.classList.remove('boldText');
         let filter_wrapper = document.querySelectorAll(".filter_wrapper");
