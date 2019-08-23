@@ -139,7 +139,8 @@ function displayFilter(filter_array) {
       }
     }
 
-// display elemfunction displayElement(theElement, display) {
+// display element
+function displayElement(theElement, display) {
   theElement.style.display = display;
 }
 });
