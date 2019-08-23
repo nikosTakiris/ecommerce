@@ -43,7 +43,7 @@ if(filter_items_title) {
           });
           let product_shop = document.querySelectorAll(".product_shop");
           product_shop.forEach(function(product) {
-            displayElement(product, 'block');
+         //   displayElement(product, 'block');
           });
         }
     });
