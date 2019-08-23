@@ -103,6 +103,9 @@ function displayFilter(filter_array) {
         if( (product.price == data_filter) || (product.color == data_filter) || (product.category == data_filter) || (product.status == data_filter) )  {
           product.product_div.style.display = "block";
             }
+          else {
+           product.product_div.style.display = "none";  
+          }
         });
       });
     }
