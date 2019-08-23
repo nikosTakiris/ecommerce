@@ -27,7 +27,7 @@ if(filter_items_title) {
       } else if(!title.classList.contains('show')) {
         content_title.style.border = "none";
         content_title.style.fontWeight = "0";
-        displayElement(filter_content, 'none');
+       // displayElement(filter_content, 'none');
         plus_sign.innerHTML = "+";
         filter_array = [];
         content_title.classList.remove('boldText');
