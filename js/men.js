@@ -27,15 +27,14 @@ if(filter_items_title) {
       } else if(!title.classList.contains('show')) {
         content_title.style.border = "none";
         content_title.style.fontWeight = "0";
-       // displayElement(filter_content, 'none');
-      //    displayFilter(filter_content, 'none');
-          filter_content.style.display = "none";
+        displayElement(filter_content, 'none');
+        //    filter_content.style.display = "none";
         plus_sign.innerHTML = "+";
         filter_array = [];
         content_title.classList.remove('boldText');
         let filter_wrapper = document.querySelectorAll(".filter_wrapper");
           filter_wrapper.forEach(function(wrapper) {
-       //   displayElement(wrapper, 'block');
+          displayElement(wrapper, 'block');
             });
           let filter_general = document.querySelectorAll(".filter_general");
           filter_general.forEach(function(general) {
@@ -43,7 +42,7 @@ if(filter_items_title) {
           });
           let product_shop = document.querySelectorAll(".product_shop");
           product_shop.forEach(function(product) {
-         //   displayElement(product, 'block');
+            displayElement(product, 'block');
           });
         }
     });
