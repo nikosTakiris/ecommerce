@@ -143,4 +143,4 @@ function displayFilter(filter_array) {
 function displayElement(theElement, display) {
   theElement.style.display = display;
 }
-});
+
